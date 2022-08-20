@@ -3,7 +3,7 @@ app_supplier:
         alias: app.supplier
         except: ['show']
         section: admin
-        templates: SyliusAdminBundle:Crud
+        templates: "@SyliusAdmin\\Crud"
         grid: app_admin_supplier
     type: sylius.resource
     prefix: /admin

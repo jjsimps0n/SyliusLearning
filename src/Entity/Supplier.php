@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="app_supplier")
  */
-class Supplier 
+class Supplier implements SupplierInterface
 {
     /**
      * @var int
