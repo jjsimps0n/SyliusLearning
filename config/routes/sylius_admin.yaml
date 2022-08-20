@@ -1,0 +1,9 @@
+app_supplier:
+    resource: |
+        alias: app.supplier
+        except: ['show']
+        section: admin
+        templates: SyliusAdminBundle:Crud
+        grid: app_admin_supplier
+    type: sylius.resource
+    prefix: /admin
