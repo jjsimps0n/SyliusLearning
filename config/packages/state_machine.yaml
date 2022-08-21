@@ -1,0 +1,13 @@
+winzou_state_machine:
+    {{prefix}}_{{module_name}}:
+        class: "%app.model.{{module_name}}.class%"
+        property_path: state
+        graph: {{prefix}}_{{module_name}}
+        state_machine_class: "%sylius.state_machine.class%" #StateMachine.php
+        states:
+            new: ~
+            trusted: ~
+        transitions:
+            trust:
+                from: [new]
+                to: trust
